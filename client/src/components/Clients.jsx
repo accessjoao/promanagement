@@ -20,7 +20,7 @@ export default function Clients() {
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
-            <th>Delete button</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
