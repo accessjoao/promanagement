@@ -16,6 +16,10 @@ connectDB();
 // Cors middlewear
 app.use(cors());
 
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static('client/build'))
+}
+
 app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: process.env.NODE_ENV === 'development',
